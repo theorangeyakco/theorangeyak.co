@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    transition: 0.3s ease;
+}
+
+@font-face {
+    font-family: Kollektif-Bold;
+    src: url(../build/static/fonts/Kollektif-Bold.ttf)
+}
+
+@font-face {
+    font-family: Kollektif-Italic;
+    src: url(../build/static/fonts/Kollektif-Italic.ttf)
+}
+
+@font-face {
+    font-family: Kollektif-BoldItalic;
+    src: url(../build/static/fonts/Kollektif-BoldItalic.ttf)
+}
+
+@font-face {
+    font-family: Kollektif;
+    src: url(../build/static/fonts/Kollektif.ttf)
+}
