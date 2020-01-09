@@ -3,94 +3,111 @@
 @tailwind utilities;
 
 * {
-    transition: 0.3s ease;
+	transition: 0.3s ease;
 }
 
 html {
-    overflow: overlay;
+	overflow: overlay;
 }
 
-body { 
-    animation: fadeInAnimation ease 2s;
-    animation-fill-mode: forwards; 
-} 
-  
-@keyframes fadeInAnimation { 
-    0% { 
-        opacity: 0; 
-    } 
-    100% { 
-        opacity: 1; 
-     } 
-} 
+body {
+	animation: fadeInAnimation ease 2s;
+	animation-fill-mode: forwards;
+}
 
-@font-face {
-    font-family: Kollektif-Bold;
-    src: url(../build/static/fonts/Kollektif-Bold.ttf);
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @font-face {
-    font-family: Kollektif-Italic;
-    src: url(../build/static/fonts/Kollektif-Italic.ttf);
+	font-family: Kollektif-Bold;
+	src: url(../build/static/fonts/Kollektif-Bold.ttf);
 }
 
 @font-face {
-    font-family: Kollektif-BoldItalic;
-    src: url(../build/static/fonts/Kollektif-BoldItalic.ttf);
+	font-family: Kollektif-Italic;
+	src: url(../build/static/fonts/Kollektif-Italic.ttf);
 }
 
 @font-face {
-    font-family: Kollektif;
-    src: url(../build/static/fonts/Kollektif.ttf);
+	font-family: Kollektif-BoldItalic;
+	src: url(../build/static/fonts/Kollektif-BoldItalic.ttf);
+}
+
+@font-face {
+	font-family: Kollektif;
+	src: url(../build/static/fonts/Kollektif.ttf);
 }
 
 /* Style for all active links */
 
 .active {
-    @apply underline;
+	@apply underline;
 }
 
 /* Navbar font */
 
 .menu-font {
-    @apply text-xl font-kbold uppercase text-gray-800;
+	@apply text-xl font-kbold uppercase text-gray-800;
 }
 
 /* Navbar links */
 
 .menu-link {
-    @apply text-gray-800 py-3 px-2 ;
-    @screen sm {
-        @apply px-6;
-    }
+	@apply text-gray-800 py-3 px-2;
 }
 
 .menu-link:hover {
-    @apply text-blue-500;
+	@apply text-blue-500;
     @apply underline;
 }
 
 /* Card component styles */
 
 .card-component {
-    max-width: 340px;
-    min-width: 340px;
-    min-height: 420px;
-    @apply bg-white shadow-xl;
+	max-width: 340px;
+	min-width: 340px;
+	min-height: 400px;
+	@apply bg-white shadow-xl mx-5 mt-5 mb-10;
+}
+
+@screen sm {
+	.card-component {
+		@apply mb-10;
+    }
+    
+    .menu-link {
+		@apply px-6;
+    }
+}
+@screen md {
+	.card-component {
+		@apply mb-5;
+	}
 }
 
 .card-component:hover {
-    @apply bg-white shadow-2xl;
+	@apply bg-white shadow-2xl;
     transform: translateY(-10px);
 }
 
 /* Card inner styles */
 
 .heading-font {
-    @apply text-xl font-kbold text-gray-800 text-center pt-5 underline;
+	@apply text-xl font-kbold text-gray-800 text-center pt-5 underline;
 }
 
 .card-text {
-    @apply font-k pl-5 pr-5 pb-5 pt-2 text-gray-700;
+	@apply font-k pl-5 pr-5 pb-5 pt-2 text-gray-700;
 }
 
+.card-img {
+    width: 320px;
+    height: 150px;
+    @apply m-auto align-middle;
+}
