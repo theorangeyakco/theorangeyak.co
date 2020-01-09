@@ -53,7 +53,7 @@ body {
 /* Navbar font */
 
 .menu-font {
-	@apply text-xl font-kbold uppercase text-gray-800;
+	@apply text-xl font-kbold uppercase text-center text-gray-800;
 }
 
 /* Navbar links */
