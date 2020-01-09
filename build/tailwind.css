@@ -11410,11 +11410,13 @@ video {
   transition: 0.3s ease;
 }
 
+html {
+  overflow: overlay;
+}
+
 body {
-  -webkit-animation: fadeInAnimation ease 1s;
-          animation: fadeInAnimation ease 1s;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
+  -webkit-animation: fadeInAnimation ease 2s;
+          animation: fadeInAnimation ease 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -11442,25 +11444,97 @@ body {
 @font-face {
   font-family: Kollektif-Bold;
 
-  src: url(../build/static/fonts/Kollektif-Bold.ttf)
+  src: url(../build/static/fonts/Kollektif-Bold.ttf);
 }
 
 @font-face {
   font-family: Kollektif-Italic;
 
-  src: url(../build/static/fonts/Kollektif-Italic.ttf)
+  src: url(../build/static/fonts/Kollektif-Italic.ttf);
 }
 
 @font-face {
   font-family: Kollektif-BoldItalic;
 
-  src: url(../build/static/fonts/Kollektif-BoldItalic.ttf)
+  src: url(../build/static/fonts/Kollektif-BoldItalic.ttf);
 }
 
 @font-face {
   font-family: Kollektif;
 
-  src: url(../build/static/fonts/Kollektif.ttf)
+  src: url(../build/static/fonts/Kollektif.ttf);
+}
+
+/* Style for all active links */
+
+.active {
+  text-decoration: underline;
+}
+
+/* Navbar font */
+
+.menu-font {
+  font-size: 1.25rem;
+  font-family: Kollektif-Bold, sans-serif;
+  text-transform: uppercase;
+  color: #2d3748;
+}
+
+/* Navbar links */
+
+.menu-link {
+  color: #2d3748;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  @media (min-width: 640px) {
+    padding-left: 1.5rem;
+
+    padding-right: 1.5rem;
+  }
+}
+
+.menu-link:hover {
+  color: #4299e1;
+  text-decoration: underline;
+}
+
+/* Card component styles */
+
+.card-component {
+  max-width: 340px;
+  min-width: 340px;
+  min-height: 420px;
+  background-color: #fff;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.card-component:hover {
+  background-color: #fff;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+/* Card inner styles */
+
+.heading-font {
+  font-size: 1.25rem;
+  font-family: Kollektif-Bold, sans-serif;
+  color: #2d3748;
+  text-align: center;
+  padding-top: 1.25rem;
+  text-decoration: underline;
+}
+
+.card-text {
+  font-family: Kollektif, sans-serif;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-top: 0.5rem;
+  color: #4a5568;
 }
 
 @media (min-width: 640px) {
@@ -54582,3 +54656,4 @@ body {
     z-index: auto;
   }
 }
+

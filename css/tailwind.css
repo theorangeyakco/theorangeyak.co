@@ -6,9 +6,12 @@
     transition: 0.3s ease;
 }
 
+html {
+    overflow: overlay;
+}
+
 body { 
-    animation: fadeInAnimation ease 1s;
-    animation-iteration-count: 3; 
+    animation: fadeInAnimation ease 2s;
     animation-fill-mode: forwards; 
 } 
   
@@ -23,20 +26,71 @@ body {
 
 @font-face {
     font-family: Kollektif-Bold;
-    src: url(../build/static/fonts/Kollektif-Bold.ttf)
+    src: url(../build/static/fonts/Kollektif-Bold.ttf);
 }
 
 @font-face {
     font-family: Kollektif-Italic;
-    src: url(../build/static/fonts/Kollektif-Italic.ttf)
+    src: url(../build/static/fonts/Kollektif-Italic.ttf);
 }
 
 @font-face {
     font-family: Kollektif-BoldItalic;
-    src: url(../build/static/fonts/Kollektif-BoldItalic.ttf)
+    src: url(../build/static/fonts/Kollektif-BoldItalic.ttf);
 }
 
 @font-face {
     font-family: Kollektif;
-    src: url(../build/static/fonts/Kollektif.ttf)
+    src: url(../build/static/fonts/Kollektif.ttf);
 }
+
+/* Style for all active links */
+
+.active {
+    @apply underline;
+}
+
+/* Navbar font */
+
+.menu-font {
+    @apply text-xl font-kbold uppercase text-gray-800;
+}
+
+/* Navbar links */
+
+.menu-link {
+    @apply text-gray-800 py-3 px-2 ;
+    @screen sm {
+        @apply px-6;
+    }
+}
+
+.menu-link:hover {
+    @apply text-blue-500;
+    @apply underline;
+}
+
+/* Card component styles */
+
+.card-component {
+    max-width: 340px;
+    min-width: 340px;
+    min-height: 420px;
+    @apply bg-white shadow-xl;
+}
+
+.card-component:hover {
+    @apply bg-white shadow-2xl;
+    transform: translateY(-10px);
+}
+
+/* Card inner styles */
+
+.heading-font {
+    @apply text-xl font-kbold text-gray-800 text-center pt-5 underline;
+}
+
+.card-text {
+    @apply font-k pl-5 pr-5 pb-5 pt-2 text-gray-700;
+}
+
