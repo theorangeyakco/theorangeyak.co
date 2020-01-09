@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	animation: fadeInAnimation ease 2s;
+	animation: fadeInAnimation ease 3s;
 	animation-fill-mode: forwards;
 }
 
