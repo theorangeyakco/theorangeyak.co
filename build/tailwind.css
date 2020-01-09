@@ -11415,8 +11415,8 @@ html {
 }
 
 body {
-  -webkit-animation: fadeInAnimation ease 2s;
-          animation: fadeInAnimation ease 2s;
+  -webkit-animation: fadeInAnimation ease 3s;
+          animation: fadeInAnimation ease 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
