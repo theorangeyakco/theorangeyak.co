@@ -11412,6 +11412,7 @@ video {
 
 html {
   overflow: overlay;
+  overflow-x: hidden;
 }
 
 body {
@@ -11483,6 +11484,10 @@ body {
 
 /* Navbar links */
 
+.link:hover {
+  color: #4299e1;
+}
+
 .menu-link {
   color: #2d3748;
   padding-top: 0.75rem;
@@ -11508,6 +11513,21 @@ body {
   margin-right: 1.25rem;
   margin-top: 1.25rem;
   margin-bottom: 2.5rem;
+}
+
+.team-card {
+  max-width: 250px;
+  min-width: 250px;
+  min-height: 250px;
+  max-height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 @media (min-width: 640px) {

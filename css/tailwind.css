@@ -8,6 +8,7 @@
 
 html {
 	overflow: overlay;
+	overflow-x: hidden;
 }
 
 body {
@@ -57,6 +58,9 @@ body {
 }
 
 /* Navbar links */
+.link:hover {
+	@apply text-blue-500;
+}
 
 .menu-link {
 	@apply text-gray-800 py-3 px-2;
@@ -74,6 +78,16 @@ body {
 	min-width: 340px;
 	min-height: 400px;
 	@apply bg-white shadow-xl mx-5 mt-5 mb-10;
+}
+
+.team-card {
+	max-width: 250px;
+	min-width: 250px;
+	min-height: 250px;
+	max-height: 250px;
+	overflow: hidden;
+	border-radius: 50%;
+	@apply bg-white shadow-xl mx-5 mt-5 mb-5;
 }
 
 @screen sm {
