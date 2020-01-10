@@ -11,6 +11,12 @@ html {
 	overflow-x: hidden;
 }
 
+.padding-thing {
+	padding-top: 1.5rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
 body {
 	animation: fadeInAnimation ease 3s;
 	animation-fill-mode: forwards;
