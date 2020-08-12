@@ -1,93 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<!-- tbh how copyright law works but i didn't want to put a footer on the site so
+	<!-- tbh how copyright law works but i didn't want to put a footer on the site so
 Copyright - Vanaj Moorthy 2020 -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:image" content="build/static/img/yaksmall.jpg" />
-    <link rel="stylesheet" href="build/tailwind.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="build/static/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="build/static/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="build/static/favicons/favicon-16x16.png">
-    <link rel="manifest" href="build/static/favicons/site.webmanifest">
-    <title>The Orange Yak Company</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta property="og:image" content="build/static/img/yaksmall.jpg" />
+		<link rel="stylesheet" href="build/tailwind.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="build/static/favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="build/static/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="build/static/favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="build/static/favicons/site.webmanifest" />
+		<title>The Orange Yak Company</title>
+	</head>
 
-<body class="m-0 p-0 border-0">
-    <div class="p-4 pb-10 main sm:pt-0">
-        <div class="bg-white flex flex-col">
-            <div class="container mx-auto">
-                <header class="flex flex-col sm:flex-row items-center justify-between py-6 relative">
-                    <h3 class="menu-font">THE ORANGE YAK CO.</h3>
-                    <nav class="pt-6 font-k sm:pt-0 md:flex text-lg">
-                        <a href="index.html" class="menu-link">Home</a>
-                        <a href="work.html" class="menu-link active">Work</a>
-                        <a href="about.html" class="menu-link">About</a>
-                    </nav>
-                </header>
-                <main class="flex flex-wrap p-5 justify-center flex-grow">
-                    <div class="card-component">
-                        <a class="link" href="http://vanajmoorthy.com/tick-tock" target="_blank">
-                            <img class="card-img" class="m-auto" src="build/static/shots/tick-tock.jpg" alt="">
-                            <h1 class="heading-font">Tick Tock</h1>
-                            <p class="card-text">This page was commissioned by my friend Dhimant as a part of a
-                                real-life crypt hunt he had organised. It took 15 minutes to code, uses Flexbox, utilises my favourite font Europa, and
-                                earned me a week's supply of snacks.</p>
-                        </a>
-                    </div>
-                    <div class="card-component m-5">
-                        <a class="link" href="http://projectsaans.org" target="_blank">
-                            <img class="card-img" class="m-auto" src="build/static/shots/projectsaans.jpg" alt="">
-                            <h1 class="heading-font">Project Saans</h1>
-                            <p class="card-text">Project Saans was a website created for a non-profit that focuses on
-                                providing clean breathing air to rural residents. The website was made using Bootstrap,
-                                jQuery, and an assortment of JavaScript libraries.</p>
-                        </a>
-                    </div>
-                    <div class="card-component m-5">
-                        <a class="link" href="http://parthsharma.co" target="_blank">
-                            <img class="card-img" class="m-auto" src="build/static/shots/parthsharma.jpg" alt="">
-                            <h1 class="heading-font">Parth Sharma</h1>
-                            <p class="card-text">This was created as a personal website for my friend Parth. It uses the
-                                P5.js library, as well as AJAX and jQuery. I created the site with him during bunked
-                                computer science classes and then hosted it site for for free on GitHub pages.</p>
-                        </a>
-                    </div>
-                    <div class="card-component m-5">
-                        <a class="link" href="https://vanajmoorthy.com" target="_blank">
-                            <img class="card-img" class="m-auto" src="build/static/shots/vanajmoorthy.jpg" alt="">
-                            <h1 class="heading-font">Vanaj Moorthy</h1>
-                            <p class="card-text">This is the third and (hopefully) final iteration of my
-                                personal website. I created it when I started deeply disliking my older website I and
-                                wanted to mess around with React. It's coded using GatsbyJS and React.</p>
-                        </a>
-                    </div>
-                    <div class="card-component m-5">
-                        <a class="link" href="https://vanajmoorthy.com/second-site" target="_blank">
-                            <img class="card-img" class="m-auto" src="build/static/shots/second-site.jpg" alt="">
-                            <h1 class="heading-font">Vanaj Moorthy 2</h1>
-                            <p class="card-text">This was the second iteration in my personal website. It was
-                                created after I was inspired by some 3D WebGL projects done in P5.js. This website uses
-                                P5.js and TailwindCSS and was fuelled mainly by boredom.</p>
-                        </a>
-                    </div>
-                    <div class="card-component">
-                        <a class="link" href="https://vanajmoorthy.com/first-site" target="_blank">
-                            <img class="card-img" class="m-auto" src="build/static/shots/first-site.jpg" alt="">
-                            <h1 class="heading-font">Vanaj Moorthy 1</h1>
-                            <p class="card-text">The first iteration in my personal website. This website is
-                                made using vanilla CSS, HTML and JavaScript. It was created on a whim to display some
-                                inane GitHub projects and grew from there.</p>
-                        </a>
-                    </div>
-                </main>
-            </div>
-        </div>
-    </div>
-</body>
-
+	<body class="m-0 p-0 border-0">
+		<div class="p-4 pb-10 main sm:pt-0">
+			<div class="bg-white flex flex-col">
+				<div class="container mx-auto">
+					<header
+						class="flex flex-col sm:flex-row items-center justify-between py-6 relative"
+					>
+						<h3 class="menu-font">THE ORANGE YAK CO.</h3>
+						<nav class="pt-6 font-k sm:pt-0 md:flex text-lg">
+							<a href="index.html" class="menu-link">Home</a>
+							<a href="work.html" class="menu-link active"
+								>Work</a
+							>
+							<a href="about.html" class="menu-link">About</a>
+						</nav>
+					</header>
+					<main class="flex flex-wrap p-5 justify-center flex-grow">
+						<div class="card-component">
+							<a
+								class="link"
+								href="http://vanajmoorthy.com/tick-tock"
+								target="_blank"
+							>
+								<img
+									class="card-img"
+									class="m-auto"
+									src="build/static/shots/tick-tock.jpg"
+									alt=""
+								/>
+								<h1 class="heading-font">Tick Tock</h1>
+								<p class="card-text">
+									This page was commissioned by my friend
+									Dhimant as a part of a real-life crypt hunt
+									he had organised. It took 15 minutes to
+									code, uses Flexbox, utilises my favourite
+									font Europa, and earned me a week's supply
+									of snacks.
+								</p>
+							</a>
+						</div>
+						<div class="card-component m-5">
+							<a
+								class="link"
+								href="https://github.com/projectsaans/projectsaans.github.io"
+								target="_blank"
+							>
+								<img
+									class="card-img"
+									class="m-auto"
+									src="build/static/shots/projectsaans.jpg"
+									alt=""
+								/>
+								<h1 class="heading-font">Project Saans</h1>
+								<p class="card-text">
+									Project Saans was a website created for a
+									non-profit that focuses on providing clean
+									breathing air to rural residents. The
+									website was made using Bootstrap, jQuery,
+									and an assortment of JavaScript libraries.
+								</p>
+							</a>
+						</div>
+						<div class="card-component m-5">
+							<a
+								class="link"
+								href="http://parthsharma.co"
+								target="_blank"
+							>
+								<img
+									class="card-img"
+									class="m-auto"
+									src="build/static/shots/parthsharma.jpg"
+									alt=""
+								/>
+								<h1 class="heading-font">Parth Sharma</h1>
+								<p class="card-text">
+									This was created as a personal website for
+									my friend Parth. It uses the P5.js library,
+									as well as AJAX and jQuery. I created the
+									site with him during bunked computer science
+									classes and then hosted it site for for free
+									on GitHub pages.
+								</p>
+							</a>
+						</div>
+						<div class="card-component m-5">
+							<a
+								class="link"
+								href="https://vanajmoorthy.com"
+								target="_blank"
+							>
+								<img
+									class="card-img"
+									class="m-auto"
+									src="build/static/shots/v5.png"
+									alt=""
+								/>
+								<h1 class="heading-font">Vanaj Moorthy</h1>
+								<p class="card-text">
+									This is the current version of Vanaj's
+									website. It's made using Vue.js.
+								</p>
+							</a>
+						</div>
+						<div class="card-component m-5">
+							<a
+								class="link"
+								href="https://v4-vanajmoorthy.netlify.app"
+								target="_blank"
+							>
+								<img
+									class="card-img"
+									class="m-auto"
+									src="build/static/shots/v4.png"
+									alt=""
+								/>
+								<h1 class="heading-font">Vanaj Moorthy 4</h1>
+								<p class="card-text">
+									This is the fourth iteration of Vanaj's
+									personal website. He created to learn Vue
+									and to utilise an illustration of a scooter
+									he had made. It is hosted on netlify and
+									uses Vue.
+								</p>
+							</a>
+						</div>
+						<div class="card-component m-5">
+							<a
+								class="link"
+								href="https://github.com/vanajmoorthy/v3"
+								target="_blank"
+							>
+								<img
+									class="card-img"
+									class="m-auto"
+									src="build/static/shots/vanajmoorthy.jpg"
+									alt=""
+								/>
+								<h1 class="heading-font">Vanaj Moorthy 3</h1>
+								<p class="card-text">
+									This is the fourth iteration of Vanaj's
+									personal website. He created it when He
+									started deeply disliking his older website
+									and he and wanted to mess around with React.
+									It's coded using GatsbyJS and React.
+								</p>
+							</a>
+						</div>
+						<div class="card-component m-5">
+							<a
+								class="link"
+								href="https://vanajmoorthy.com/second-site"
+								target="_blank"
+							>
+								<img
+									class="card-img"
+									class="m-auto"
+									src="build/static/shots/second-site.jpg"
+									alt=""
+								/>
+								<h1 class="heading-font">Vanaj Moorthy 2</h1>
+								<p class="card-text">
+									This was the second iteration in my personal
+									website. It was created after I was inspired
+									by some 3D WebGL projects done in P5.js.
+									This website uses P5.js and TailwindCSS and
+									was fuelled mainly by boredom.
+								</p>
+							</a>
+						</div>
+						<div class="card-component">
+							<a
+								class="link"
+								href="https://vanajmoorthy.com/first-site"
+								target="_blank"
+							>
+								<img
+									class="card-img"
+									class="m-auto"
+									src="build/static/shots/first-site.jpg"
+									alt=""
+								/>
+								<h1 class="heading-font">Vanaj Moorthy 1</h1>
+								<p class="card-text">
+									The first iteration in my personal website.
+									This website is made using vanilla CSS, HTML
+									and JavaScript. It was created on a whim to
+									display some inane GitHub projects and grew
+									from there.
+								</p>
+							</a>
+						</div>
+					</main>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
