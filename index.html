@@ -1,53 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- tbh how copyright law works but i didn't want to put a footer on the site so
+	<!-- tbh how copyright law works but i didn't want to put a footer on the site so
 Copyright - Vanaj Moorthy 2020 -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:image" content="build/static/img/yaksmall.jpg" />
-    <link rel="stylesheet" href="build/tailwind.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="build/static/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="build/static/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="build/static/favicons/favicon-16x16.png">
-    <link rel="manifest" href="build/static/favicons/site.webmanifest">
-    <title>The Orange Yak Company</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta property="og:image" content="build/static/img/yaksmall.jpg" />
+		<link rel="stylesheet" href="build/tailwind.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="build/static/favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="build/static/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="build/static/favicons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="build/static/favicons/site.webmanifest" />
+		<title>The Orange Yak Company</title>
 
-<body class="m-0 p-0 border-0">
-    <div class="p-4 pb-10 main sm:p-0">
-        <div class="bg-white flex flex-col">
-            <div class="container mx-auto">
-                <header class="flex flex-col sm:flex-row items-center justify-between py-6 relative">
-                    <h3 class="menu-font text-center">THE ORANGE YAK CO.</h3>
-                    <nav class="pt-6 font-k sm:pt-0 md:flex text-lg">
-                        <a href="index.html" class="menu-link active">Home</a>
-                        <a href="work.html" class="menu-link">Work</a>
-                        <a href="about.html" class="menu-link">About</a>
-                    </nav>
-                </header>
-                <main class="flex flex-col-reverse sm:flex-row jusitfy-between items-center ">
-                    <div class="sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
-                        <h1 class="uppercase font-k text-2xl text-gray-800 text-secondary ">Welcome to</h1>
-                        <h2 class="uppercase font-kbold text-3xl text-gray-800 font-bold mb-6">The <span
-                                class="text-orange-500">Orange Yak</span> Company</h2>
-                        <p class="text-gray-800 font-kitalic leading-relaxed mb-12">We're a web-design firm with a
-                            special emphasis on
-                            beautiful user-interfaces, future-proof design and a client-first philosophy.</p>
-                        <a href="mailto:vanajmoorthy@gmail.com"
-                            class="border-blue-500 border-4 hover:bg-blue-500 py-3 px-6 font-k uppercase text-md hover:text-white text-blue-500 font-bold text-white rounded-full sm:text-lg" target="_blank">Contact
-                            us!</a>
-                    </div>
-                    <div class="mb-6 sm:mb-0 mt-0 sm:mt-0 sm:w-3/5 sm:pl-12">
-                        <img class="w-5/6 m-auto sm:float-right" src="build\static\img\yak.jpg" alt="yak-mascot">
-                    </div>
-                </main>
-            </div>
-        </div>
-    </div>
-</body>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-175202160-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
+			gtag("config", "UA-175202160-1");
+		</script>
+	</head>
+
+	<body class="m-0 p-0 border-0">
+		<div class="p-4 pb-10 main sm:p-0">
+			<div class="bg-white flex flex-col">
+				<div class="container mx-auto">
+					<header
+						class="flex flex-col sm:flex-row items-center justify-between py-6 relative"
+					>
+						<h3 class="menu-font text-center">
+							THE ORANGE YAK CO.
+						</h3>
+						<nav class="pt-6 font-k sm:pt-0 md:flex text-lg">
+							<a href="index.html" class="menu-link active"
+								>Home</a
+							>
+							<a href="work.html" class="menu-link">Work</a>
+							<a href="about.html" class="menu-link">About</a>
+						</nav>
+					</header>
+					<main
+						class="flex flex-col-reverse sm:flex-row jusitfy-between items-center"
+					>
+						<div
+							class="sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left"
+						>
+							<h1
+								class="uppercase font-k text-2xl text-gray-800 text-secondary"
+							>
+								Welcome to
+							</h1>
+							<h2
+								class="uppercase font-kbold text-3xl text-gray-800 font-bold mb-6"
+							>
+								The
+								<span class="text-orange-500">Orange Yak</span>
+								Company
+							</h2>
+							<p
+								class="text-gray-800 font-kitalic leading-relaxed mb-12"
+							>
+								We're a web-design firm with a special emphasis
+								on beautiful user-interfaces, future-proof
+								design and a client-first philosophy.
+							</p>
+							<a
+								href="mailto:vanajmoorthy@gmail.com"
+								class="border-blue-500 border-4 hover:bg-blue-500 py-3 px-6 font-k uppercase text-md hover:text-white text-blue-500 font-bold text-white rounded-full sm:text-lg"
+								target="_blank"
+								>Contact us!</a
+							>
+						</div>
+						<div
+							class="mb-6 sm:mb-0 mt-0 sm:mt-0 sm:w-3/5 sm:pl-12"
+						>
+							<img
+								class="w-5/6 m-auto sm:float-right"
+								src="build\static\img\yak.jpg"
+								alt="yak-mascot"
+							/>
+						</div>
+					</main>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
